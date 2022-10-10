@@ -1,0 +1,17 @@
+D:\Iskola\VargaGábor\JsonFileHandler\Beadando\Beadando\bin\Debug\net6.0\Beadando.exe
+D:\Iskola\VargaGábor\JsonFileHandler\Beadando\Beadando\bin\Debug\net6.0\Beadando.deps.json
+D:\Iskola\VargaGábor\JsonFileHandler\Beadando\Beadando\bin\Debug\net6.0\Beadando.runtimeconfig.json
+D:\Iskola\VargaGábor\JsonFileHandler\Beadando\Beadando\bin\Debug\net6.0\Beadando.dll
+D:\Iskola\VargaGábor\JsonFileHandler\Beadando\Beadando\bin\Debug\net6.0\Beadando.pdb
+D:\Iskola\VargaGábor\JsonFileHandler\Beadando\Beadando\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\Iskola\VargaGábor\JsonFileHandler\Beadando\Beadando\obj\Debug\net6.0\Beadando.csproj.AssemblyReference.cache
+D:\Iskola\VargaGábor\JsonFileHandler\Beadando\Beadando\obj\Debug\net6.0\Beadando.GeneratedMSBuildEditorConfig.editorconfig
+D:\Iskola\VargaGábor\JsonFileHandler\Beadando\Beadando\obj\Debug\net6.0\Beadando.AssemblyInfoInputs.cache
+D:\Iskola\VargaGábor\JsonFileHandler\Beadando\Beadando\obj\Debug\net6.0\Beadando.AssemblyInfo.cs
+D:\Iskola\VargaGábor\JsonFileHandler\Beadando\Beadando\obj\Debug\net6.0\Beadando.csproj.CoreCompileInputs.cache
+D:\Iskola\VargaGábor\JsonFileHandler\Beadando\Beadando\obj\Debug\net6.0\Beadando.csproj.CopyComplete
+D:\Iskola\VargaGábor\JsonFileHandler\Beadando\Beadando\obj\Debug\net6.0\Beadando.dll
+D:\Iskola\VargaGábor\JsonFileHandler\Beadando\Beadando\obj\Debug\net6.0\refint\Beadando.dll
+D:\Iskola\VargaGábor\JsonFileHandler\Beadando\Beadando\obj\Debug\net6.0\Beadando.pdb
+D:\Iskola\VargaGábor\JsonFileHandler\Beadando\Beadando\obj\Debug\net6.0\Beadando.genruntimeconfig.cache
+D:\Iskola\VargaGábor\JsonFileHandler\Beadando\Beadando\obj\Debug\net6.0\ref\Beadando.dll

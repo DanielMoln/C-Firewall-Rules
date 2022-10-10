@@ -1,0 +1,160 @@
+[
+	{
+		"RuleName":"Outbound DNS",
+		"RuleType":"Network",
+		"Source":{
+			"Type":"Subnet",
+			"Destination":	[
+				"192.168.10.0/24"
+			]
+		},
+		"Destination":{
+			"Type":"IPAddress",
+			"Destination":
+			[
+				"81.222.142.44",
+				"81.222.142.45"
+			]
+		},
+		"Protocol":["UDP"],
+		"Port":["53"],
+		"Action":"Allow"
+	},
+	{
+		"RuleName":"HTTPS/Ping from office",
+		"RuleType":"Network",
+		"Source":{
+			"Type":"Subnet",
+			"Destination":	[
+				"192.168.9.0/24",
+				"192.168.11.0/24"
+			]
+		},
+		"Destination":{
+			"Type":"Subnet",
+			"Destination":
+			[
+				"0.0.0.0/0"
+			]
+		},
+		"Protocol":["TCP","ICMP"],
+		"Port":["53"],
+		"Action":"Allow"
+	},
+	{
+		"RuleName":"Outbound Time Synchronization from Domain Controllers",
+		"RuleType":"Network",
+		"Source":{
+			"Type":"IPAddress",
+			"Destination":	[
+				"192.168.10.10",
+				"192.168.10.11",
+				"192.168.35.10",
+				"192.168.35.11"
+			]
+		},
+		"Destination":{
+			"Type":"FQDN",
+			"Destination":
+			[
+				"hu.pool.ntp.org",
+				"eu.pool.ntp.org"
+			]
+		},
+		"Protocol":["UDP"],
+		"Port":["123"],
+		"Action":"Allow"
+	},
+	{
+		"RuleName":"Workstations to Domain Controllers",
+		"RuleType":"Network",
+		"Source":{
+			"Type":"Subnet",
+			"Destination":	[
+				"192.168.9.0/24",
+				"192.168.10.0/24",
+				"192.168.11.0/24"
+			]
+		},
+		"Destination":{
+			"Type":"IPAddress",
+			"Destination":	[
+				"192.168.10.10",
+				"192.168.10.11",
+				"192.168.35.10",
+				"192.168.35.11"
+			]
+		},
+		"Protocol":["TCP","ICMP","UDP"],
+		"Port":["53","88","135","445","389","686","49565-65535"],
+		"Action":"Allow"
+	},
+	{
+		"RuleName":"Allow Windows Update from workstations",
+		"RuleType":"Application",
+		"Source":{
+			"Type":"Subnet",
+			"Destination":	[
+				"192.168.9.0/24",
+				"192.168.10.0/24",
+				"192.168.11.0/24"
+			]
+		},
+		"Destination":{
+			"Type":"FQDN",
+			"Destination":	[
+				"update.microsoft.com",
+				"windowsupdate.microsoft.com"
+			]
+		},
+		"Protocol":["TCP"],
+		"Port":["443","80"],
+		"Action":"Allow"
+	},
+	{
+		"RuleName":"Block facebook and gmail",
+		"RuleType":"Application",
+		"Source":{
+			"Type":"Subnet",
+			"Destination":	[
+				"192.168.9.0/24",
+				"192.168.10.0/24",
+				"192.168.11.0/24"
+			]
+		},
+		"Destination":{
+			"Type":"FQDN",
+			"Destination":	[
+				"facebook.com",
+				"*.facebook.com",
+				"gmail.com",
+				"*.gmail.com"
+			]
+		},
+		"Protocol":["TCP"],
+		"Port":["443","80"],
+		"Action":"Deny"
+	},
+	{
+		"RuleName":"Block ncore torrent page",
+		"RuleType":"Application",
+		"Source":{
+			"Type":"Subnet",
+			"Destination":	[
+				"192.168.9.0/24",
+				"192.168.10.0/24",
+				"192.168.11.0/24"
+			]
+		},
+		"Destination":{
+			"Type":"FQDN",
+			"Destination":	[
+				"ncore.pro"
+			]
+		},
+		"Protocol":["TCP"],
+		"Port":["443","80"],
+		"Action":"Deny"
+	}
+
+]
